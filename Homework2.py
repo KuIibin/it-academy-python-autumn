@@ -8,7 +8,7 @@ n = n / 100
 l = m + n
 all = l * k
 all_c = round(all // 1)
-all_p = round((all % 1 ) * 100)
+all_p = round((all % 1) * 100)
 print('Спасибо, что сделали покупку у нас.')
 print('Общая цена ', all_c, ' рублей ', all_p, ' копеек.')
 
