@@ -54,13 +54,13 @@ test = num
 dopel = 0
 while 1:
     dopel += num % 10
-    print(dopel) # for check
+    print(dopel)
     num //= 10
-    print(num) # for check
+    print(num)
     if not num:
         break
     dopel *= 10
-    print(dopel) # for check
+    print(dopel)
     print('end iteration')
 if test == dopel:
     print('palindrome')
@@ -78,4 +78,3 @@ for element in range(2, n):
     x.append(x[-1] + x[-2])
 print(x)
 # подсказку для решения нашел на стек оверфлоу
-'''
