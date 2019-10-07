@@ -1,22 +1,22 @@
 
 # Задание 1: программа считает сумму заказа
-
+'''
 m = int(input("Введите колличество рублей: "))
 n = int(input('введите колличество копеек: '))
 k = int(input('Количество покупок '))
 n = n / 100
 l = m + n
-all = l * k
-all_c = round(all // 1)
-all_p = round((all % 1) * 100)
+price = l * k
+price_c = round(price // 1)
+price_p = round((price % 1) * 100)
 print('Спасибо, что сделали покупку у нас.')
-print('Общая цена ', all_c, ' рублей ', all_p, ' копеек.')
+print('Общая цена ', price_c, ' рублей ', price_p, ' копеек.')
 
 # Задача 1
 # Выведите все элементы, которые меньше 5
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 for element in a:
-    if 5 < element < 25:
+    if element < 5:
         print(element)
 
 
@@ -29,6 +29,7 @@ if b == 0:
 else:
     print('Очень жаль. Я надеюсь, в следующий раз тебе повезет')
 
+
 # Даны списки:
 # Нужно вернуть список, который состоит из элементов
 # общих для этих двух списков.
@@ -37,25 +38,52 @@ a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 stack = []
-
-for element in a:
-    if element in b:
-        stack.append(element)
-
-
+for el in a:
+    if el in b:
+        stack.append(el)
+print(stack)
+'''
 # дополнительное задание
 # Определите, является ли число палиндромом (читается слева
 # направо и справа налево одинаково).
 # Число положительное целое, произвольной длинны
+'''
+a_int = int(input('Введите любое положительное число: '))
 
-a_int = input('Введите любое положительное число: ')
-
-a_int = a_int.replace(' ', '')
-
-if a_int == a_int[::-1]:
-    print('Число является полиндромом')
+ll = a_int//2
+for el in range(ll):
+    if a_int[el] != a_int[-1-el]:
+        print('Число не полиндром')
+    else:
+        print('Число полиндром')
+'''
+num = int(input('Enter number:'))
+test = num
+dopel = 0
+while 1:
+    dopel += num % 10
+    print(dopel)
+    num //= 10
+    print(num)
+    if not num:
+        break
+    dopel *= 10
+    print(dopel)
+    print('end iteration')
+if test == dopel:
+    print('palindrome')
 else:
-    print('Число не является полиндромом')
+    print('not palindrome')
+
+
+
+'''
+print(a_int, type(a_int))
+
+#if a_int == a_int[::-1]:
+#    print('Число является полиндромом')
+#else:
+#    print('Число не является полиндромом')
 
 
 # Числа фибоначи
@@ -68,3 +96,4 @@ for element in range(2, n):
     x.append(x[-1] + x[-2])
 print(x)
 # подсказку для решения нашел на стек оверфлоу
+'''
