@@ -1,6 +1,6 @@
 
 # Задание 1: программа считает сумму заказа
-'''
+
 m = int(input("Введите колличество рублей: "))
 n = int(input('введите колличество копеек: '))
 k = int(input('Количество покупок '))
@@ -42,48 +42,30 @@ for el in a:
     if el in b:
         stack.append(el)
 print(stack)
-'''
+
 # дополнительное задание
 # Определите, является ли число палиндромом (читается слева
 # направо и справа налево одинаково).
 # Число положительное целое, произвольной длинны
-'''
-a_int = int(input('Введите любое положительное число: '))
 
-ll = a_int//2
-for el in range(ll):
-    if a_int[el] != a_int[-1-el]:
-        print('Число не полиндром')
-    else:
-        print('Число полиндром')
-'''
+# подсмотрел решение. зато разобрался)
 num = int(input('Enter number:'))
 test = num
 dopel = 0
 while 1:
     dopel += num % 10
-    print(dopel)
+    print(dopel) # for check
     num //= 10
-    print(num)
+    print(num) # for check
     if not num:
         break
     dopel *= 10
-    print(dopel)
+    print(dopel) # for check
     print('end iteration')
 if test == dopel:
     print('palindrome')
 else:
     print('not palindrome')
-
-
-
-'''
-print(a_int, type(a_int))
-
-#if a_int == a_int[::-1]:
-#    print('Число является полиндромом')
-#else:
-#    print('Число не является полиндромом')
 
 
 # Числа фибоначи
