@@ -7,7 +7,7 @@ print(lst1)
 lst2 = lst1[::2]
 print(lst2)
 # Use a list comprehension to construct the list ['1a', '2a', '3a', '4a'].
-lst3 = [x+y for x in '1234' for y in 'a']
+lst3 = [x + y for x in '1234' for y in 'a']
 print(lst3)
 # Simultaneously remove the element '2a' from the above list and print it.
 print(lst3.pop(1))
