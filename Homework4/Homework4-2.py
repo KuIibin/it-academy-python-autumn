@@ -1,7 +1,7 @@
 # List practice
 
 # Use a list comprehension to construct the list ['ab', 'ac', 'ad', 'bb', 'bc', 'bd'].
-lst1 = [str(q+w) for q in 'ab' for w in 'bcd']
+lst1 = [str(q + w) for q in 'ab' for w in 'bcd']
 print(lst1)
 # Use a slice on the above list to construct the list ['ab', 'ad', 'bc'].
 lst2 = lst1[::2]
