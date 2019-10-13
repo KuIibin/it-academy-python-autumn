@@ -6,5 +6,4 @@ string1 = set(input('Введите 1-ый список чисел: ').split())
 string2 = set(input('Введите 2-ый список чисел: ').split())
 print('Первое множество: ', string1)
 print('Второе множество: ', string2)
-print('Колличества чисел, которые'
-' содержатся в обоих множествах', len(string1 & string2))
+print('Числа в обоих множествах', len(string1 & string2))
