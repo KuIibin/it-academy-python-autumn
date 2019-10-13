@@ -5,11 +5,11 @@
 number_contries = int(input('Введите колличество стран: '))
 countries_and_cityes = {}
 for el in range(number_contries):
-    country, *city = input('Введите через пробел Страну и ее город: ').split()
+    country, *city = input('Введите Страну и ее город: ').split()
     for elem in city:
         countries_and_cityes[elem] = country
-print('Словарь, состоящий из Страни и их городов: ', countries_and_cityes)
-number_cityes = int(input('Введите колличество городов, которые хотите проверить: '))
+print('Словарь из Стран и их городов: ', countries_and_cityes)
+number_cityes = int(input('Введите к-во городов для проверки: '))
 cityes = []
 print('Вводите название городов, которые хотите проверить: ')
 for el in range(number_cityes):
