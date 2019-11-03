@@ -27,10 +27,10 @@ result_dict = {}
 for num in num_list:
     result_dict[num] = result_dict.get(num, 0) + 1
 
+
 def maxkey(result_dict):
     values = list(result_dict.values())
     keys = list(result_dict.keys())
     return keys[values.index(max(values))]
-
 
 print(maxkey(result_dict))
