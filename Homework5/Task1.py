@@ -20,11 +20,11 @@ print(dct2)
 
 # second solution
 sent2 = input('Введите предожение: ')
-dctWithFrequency = {} 
-  
-for el in sent2: 
-    if el in dctWithFrequency: 
+dctWithFrequency = {}
+
+for el in sent2:
+    if el in dctWithFrequency:
         dctWithFrequency[el] += 1
-    else: 
+    else:
         dctWithFrequency[el] = 1
 print(dctWithFrequency)
