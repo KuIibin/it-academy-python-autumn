@@ -14,23 +14,6 @@ number = int(input('Введите число: '))
 dct = {el: el**2 for el in range(1, number + 1)}
 print(dct)
 
-# sent = input('Введите предожение: ')
-# dct2 = {el: sent.count(el) for el in sent}
-# print(dct2)
-
-# # second solution
-# sent2 = input('Введите предожение: ')
-# dctWithFrequency = {}
-
-# for el in sent2:
-#     if el in dctWithFrequency:
-#         dctWithFrequency[el] += 1
-#     else:
-#         dctWithFrequency[el] = 1
-# print(dctWithFrequency)
-
-# third solution
-
 sent3 = input('Please, enter string: ')
 dct3 = {}
 for el in sent3:
