@@ -3,6 +3,4 @@
 
 string1 = set(input('Введите 1-ый список чисел: ').split())
 string2 = set(input('Введите 2-ый список чисел: ').split())
-print('Первое множество: ', string1)
-print('Второе множество: ', string2)
 print('', len(string1 ^ string2))
