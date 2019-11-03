@@ -4,4 +4,4 @@
 
 string1 = set(input('Введите 1-ый список чисел: ').split())
 string2 = set(input('Введите 2-ый список чисел: ').split())
-print('Числа в обоих множествах', len(string1 & string2))
+print(len(string1 & string2))
