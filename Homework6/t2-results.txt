@@ -1,0 +1,9 @@
+Func "sqrt" has result: 2
+Func "sqrt" has result: 3
+Func "sqrt" has result: 4
+Func "sqrt" has result: 10
+Func "sqrt" has result: 20
+Func "sqrt" has result: 30
+Func "sqrt" has result: 10
+Func "sqrt" has result: 20
+Func "sqrt" has result: 30
