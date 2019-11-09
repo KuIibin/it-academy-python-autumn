@@ -5,7 +5,6 @@
 def dec(sqrt):
     def wrapper(x):
         result = sqrt(x)
-        print(result)
         f = open('Homework6/t2-results.txt', 'a')
         f.write('Func "sqrt" has result: {}\n'.format(result))
         f.close()
