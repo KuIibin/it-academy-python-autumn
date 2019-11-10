@@ -154,8 +154,7 @@ def list_practice():
 
 
 def create_list():
-    '''Create the list ['a', 'b', 'c'], then create
-    a tuple from that list'''
+    '''create a tuple from that list'''
     lst1 = [el for el in 'abc']
     print(lst1)
     tpl1 = tuple(lst1)
@@ -180,10 +179,7 @@ def tuple_practise():
 
 
 def freq_in_dct():
-    '''Define a dict comprehension which returns a dictionary
-    where the keys are numbers between 1 and n (both included)
-    and the values are square of keys. n – function argument.
-    Default is 20.'''
+    '''Define a dict comprehension which returns a dictionary'''
     sent2 = input('Введите предожение: ')
     dctWithFrequency = {}
     for el in sent2:
@@ -214,9 +210,7 @@ def freq_word():
 
 
 def country_and_cityes():
-    '''Дан список стран и городов каждой страны.
-    Затем даны названия городов. Для каждого города
-    укажите, в какой стране он находится.'''
+    '''Дан список стран и городов каждой страны'''
     number_contries = int(input('Введите колличество стран: '))
 
     countries_and_cityes = {}
@@ -237,17 +231,14 @@ def country_and_cityes():
 
 
 def count_num_both_list():
-    '''Даны два списка чисел. Посчитайте, сколько
-    чисел содержится одновременно как в первом
-    списке, так и во втором.'''
+    '''сколько чисел содержится как в первом и во втором списке.'''
     string1 = set(input('Введите 1-ый список чисел: ').split())
     string2 = set(input('Введите 2-ый список чисел: ').split())
     print('Числа в обоих множествах', len(string1 & string2))
 
 
 def count_num_in_list():
-    '''Даны два списка чисел. Посчитайте, сколько
-    чисел входит только в один из этих списков'''
+    '''сколько чисел входит только в один из этих списков'''
     string1 = set(input('Введите 1-ый список чисел: ').split())
     string2 = set(input('Введите 2-ый список чисел: ').split())
     print('', len(string1 ^ string2))
