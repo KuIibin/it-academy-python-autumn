@@ -10,7 +10,7 @@
 
 try:
     ratings_list_reader = open('Homework6/data/ratings.list', 'r', encoding="ISO-8859-1")
-except:
+except NameError:
     print('Error: This folder does not contain this file.')
 
 films_list = []

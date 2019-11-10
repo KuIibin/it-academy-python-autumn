@@ -11,12 +11,14 @@ def total_price():
     print('Спасибо, что сделали покупку у нас.')
     print('Общая цена ', price_c, ' рублей ', price_p, ' копеек.')
 
+
 def el_less_5():
     '''Выводит все элементы, которые меньше 5'''
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     for element in a:
         if element < 5:
             print(element)
+
 
 def num_divided():
     '''Определить, делится ли число на 17'''
@@ -28,6 +30,7 @@ def num_divided():
     else:
         print('Очень жаль. Я надеюсь, в следующий раз тебе повезет')
 
+
 def both_lst():
     '''список из двух списков'''
     a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
@@ -38,6 +41,7 @@ def both_lst():
         if el in b:
             stack.append(el)
     print(stack)
+
 
 def is_palindrom():
     '''является ли число палиндромом'''
@@ -59,6 +63,7 @@ def is_palindrom():
     else:
         print('not palindrome')
 
+
 def num_fibonachi():
     '''Числа фибоначи'''
     n = int(input('Введите колличество чисел: '))
@@ -66,6 +71,7 @@ def num_fibonachi():
     for element in range(2, n):
         x.append(x[-1] + x[-2])
     print(x)
+
 
 def most_longer_word():
     '''самое длинное слово в введенном предложении'''
@@ -80,6 +86,7 @@ def most_longer_word():
 
     print('Самое длинное слово - это "' + x[idFirst] + '"')
 
+
 def repeat_char():
     '''удалить из нее повторяющиеся символы'''
     x = input('Введите предложение: ')
@@ -89,6 +96,7 @@ def repeat_char():
         if i not in y:
             y = y + i
     print(y)
+
 
 def word_count():
     '''количество строчных и прописных букв в строке'''
@@ -106,6 +114,7 @@ def word_count():
     print('Маленьких - {lowerCount} букв'.format(lowerCount=lowerCount))
     print('Больших - {upperCount} букв'.format(upperCount=upperCount))
 
+
 def fizzbuzz():
     '''FizzBuzz'''
     lst = []
@@ -122,6 +131,7 @@ def fizzbuzz():
         else:
             lst.append(el)
     print(lst)
+
 
 def list_practice():
     # Use a list comprehension to construct the list ['ab', 'ac', 'ad', 'bb',
@@ -142,6 +152,7 @@ def list_practice():
     lst3_copy.insert(1, '2a')
     print(lst3_copy)
 
+
 def create_list():
     '''Create the list ['a', 'b', 'c'], then create
     a tuple from that list'''
@@ -149,6 +160,7 @@ def create_list():
     print(lst1)
     tpl1 = tuple(lst1)
     print('subtask1 done. answer is ', tpl1)
+
 
 def tuple_practise():
     x1 = 'a'
@@ -166,6 +178,7 @@ def tuple_practise():
     print(tpl2)
     print('subtask2 done. answer is ', lst3)
 
+
 def freq_in_dct():
     '''Define a dict comprehension which returns a dictionary
     where the keys are numbers between 1 and n (both included)
@@ -179,6 +192,7 @@ def freq_in_dct():
         else:
             dctWithFrequency[el] = 1
     print(dctWithFrequency)
+
 
 def freq_word():
     '''Cлово, которое в этом тексте встречается чаще всего'''
@@ -197,6 +211,7 @@ def freq_word():
         return keys[values.index(max(values))]
 
     print(maxkey(result_dict))
+
 
 def country_and_cityes():
     '''Дан список стран и городов каждой страны.
@@ -220,6 +235,7 @@ def country_and_cityes():
     for el in cityes:
         print(el, 'находится в', countries_and_cityes.get(el))
 
+
 def count_num_both_list():
     '''Даны два списка чисел. Посчитайте, сколько
     чисел содержится одновременно как в первом
@@ -227,6 +243,7 @@ def count_num_both_list():
     string1 = set(input('Введите 1-ый список чисел: ').split())
     string2 = set(input('Введите 2-ый список чисел: ').split())
     print('Числа в обоих множествах', len(string1 & string2))
+
 
 def count_num_in_list():
     '''Даны два списка чисел. Посчитайте, сколько

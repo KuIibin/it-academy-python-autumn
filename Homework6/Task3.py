@@ -8,7 +8,7 @@
 
 def get_ranges(lst):
     count = ''
-    for el in range(len(lst)-1):
+    for el in range(len(lst) - 1):
         if lst[el] + 1 == lst[el + 1] and lst[el] -1 != lst[el - 1]:
             count += "{}-".format(lst[el])
         elif lst[el] + 1 != lst[el + 1]:
@@ -17,5 +17,5 @@ def get_ranges(lst):
     print('"{}"'.format(count))
 
 get_ranges([0, 1, 2, 3, 4, 7, 8, 10])
-get_ranges([4,7,10])
+get_ranges([4, 7, 10])
 get_ranges([2, 3, 8, 9])
