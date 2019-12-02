@@ -8,9 +8,6 @@ def total_prices(rubles, cents, c_purchases):
         r_cents = cents / 100
         price = rubles + r_cents
         total_price = price * c_purchases
-        # total_price_c = round(total_price // 1)
-        # total_price_p = round((total_price % 1) * 100)
-        # print('Общая цена ', total_price_c, ' рублей ', total_price_p, ' копеек.')
         return total_price
     else:
         pass
@@ -34,15 +31,17 @@ def divided_by_17(number):
         print('Очень жаль. Я надеюсь, в следующий раз тебе повезет')
     return divided_number
 
+
 class TestTotalPrices(unittest.TestCase):
 
     def test_normal(self):
         result = total_prices(3, 20, 3)
         self.assertEqual(result, 9.600000000000001)
-    
+
     def test_negative(self):
         result = total_prices(-3, 20, 3)
         self.assertEqual(result, None)
+
 
 class TestElemLess5(unittest.TestCase):
 
@@ -53,6 +52,7 @@ class TestElemLess5(unittest.TestCase):
     def test_negative(self):
         result = element_less_5([1, 1, -2, 3, -5, 8, 13, 21, 34, 55, 89])
         self.assertEqual(result, [1, 1, 3])
+
 
 class TestDividedBy17(unittest.TestCase):
 
@@ -67,4 +67,4 @@ class TestDividedBy17(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    
+ 
