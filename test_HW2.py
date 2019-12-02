@@ -1,8 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-import unittest
 import nose
-from nose.plugins import cover
+import unittest
 
 
 def total_prices(rubles, cents, c_purchases):
@@ -65,4 +64,3 @@ class TestDividedBy17(unittest.TestCase):
     def test_negative(self):
         result = divided_by_17(-17)
         self.assertEqual(result, 0)
-
