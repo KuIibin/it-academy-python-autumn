@@ -1,16 +1,16 @@
 
 # Задание 1: программа считает сумму заказа
 
-m = int(input("Введите колличество рублей: "))
-n = int(input('введите колличество копеек: '))
-k = int(input('Количество покупок '))
-n = n / 100
-l = m + n
-price = l * k
-price_c = round(price // 1)
-price_p = round((price % 1) * 100)
+rubles = int(input("Введите колличество рублей: "))
+cents = int(input('введите колличество копеек: '))
+c_purchases = int(input('Количество покупок '))
+r_cents = cents / 100
+price = rubles + r_cents
+total_price = price * c_purchases
+total_price_c = round(total_price // 1)
+total_price_p = round((total_price % 1) * 100)
 print('Спасибо, что сделали покупку у нас.')
-print('Общая цена ', price_c, ' рублей ', price_p, ' копеек.')
+print('Общая цена ', total_price_c, ' рублей ', total_price_p, ' копеек.')
 
 # Задача 1
 # Выведите все элементы, которые меньше 5
