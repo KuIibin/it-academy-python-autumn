@@ -24,8 +24,6 @@ jobs:
           command: |
             sudo pip install tox
             tox -epycodestyle
-      - run: 
-          command: tox -epycodestyle
 
 workflows:
   version: 2
