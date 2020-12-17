@@ -1,10 +1,4 @@
 version: 2
-workflows:
-  version: 2
-  test:
-    jobs:
-      - test-flake8
-      - test-pycodestyle
 jobs:
   build:
     docker:
@@ -16,12 +10,31 @@ jobs:
       - image: circleci/python:3.7
     steps:
       - checkout
-      - run: sudo pip install tox
-      - run: tox -eflake8
+      - run: 
+          command: |
+            sudo pip install tox
+            tox -eflake8
+
   test-pycodestyle:
     docker:
       - image: circleci/python:3.7
     steps:
       - checkout
-      - run: sudo pip install tox
-      - run: tox -epycodestyle
+      - run: 
+          command: |
+            sudo pip install tox
+            tox -epycodestyle
+      - run: 
+          command: tox -epycodestyle
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
+      - test-flake8:
+          requires:
+            - build
+      - test-pycodestyle:
+          requires:
+            - build
